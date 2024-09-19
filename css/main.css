@@ -156,3 +156,58 @@ button {
         width: 99%;
     }
 }
+
+@media (max-width: 400px) {
+    .form-right {
+        display: grid;
+        grid-area: form-right;
+        border-bottom: 1px solid black;
+        border-left: none;
+    }
+    .logo > img {
+        width: 100px;
+        margin-right: 100px;
+    }
+    button {
+        padding: 10px 25px;
+        border:none;
+        cursor: pointer;
+        background: #3838d1;
+        color: #fff;
+        font-size: 16px;
+        margin-right: 7px;
+        grid-area: button;
+    }
+    .btn a {
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(52, 63, 176);
+        grid-area: a;
+    }
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:  
+        'form-right';
+    }
+    .description {
+        display: none;
+    }
+    .btn {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-areas:  
+       'button'
+       'a';
+    }
+    a {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .text {
+        margin-bottom: 10px;
+    }
+    input[type="text"] {
+        width: 99%;
+    }
+}
